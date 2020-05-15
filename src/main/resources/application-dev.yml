@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://106.14.149.212:3306/blog?useUnicode=true&characterEncoding=utf-8&autoReconnect=true
+    username: root
+    password: 123456
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+logging:
+  level:
+    root: info
+    com.wyf: debug
+  file: log/blog-dev.log
+server:
+  port: 80
+
+
