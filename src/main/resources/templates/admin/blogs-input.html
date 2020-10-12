@@ -58,11 +58,10 @@
                     <div class="ui selection compact teal basic dropdown label">
                         <input type="hidden" value="原创" name="flag" th:value="*{flag}">
                         <i class="dropdown icon"></i>
-                        <div class="text">原创</div>
+                        <div class="text">博客类型</div>
                         <div class="menu">
                             <div class="item" data-value="原创">原创</div>
                             <div class="item" data-value="转载">转载</div>
-                            <div class="item" data-value="翻译">翻译</div>
                         </div>
                     </div>
                     <input type="text" name="title" th:value="*{title}" placeholder="标题">
@@ -242,35 +241,35 @@
                 identifier: 'title',
                 rules: [{
                     type : 'empty',
-                    prompt: '标题: 请输入博客标题'
+                    prompt: '请输入博客标题'
                 }]
             },
             content : {
                 identifier: 'content',
                 rules: [{
                     type : 'empty',
-                    prompt: '标题: 请输入博客内容'
+                    prompt: '请输入博客内容'
                 }]
             },
             typeId : {
-                identifier: 'typeId',
+                identifier: 'type.id',
                 rules: [{
                     type : 'empty',
-                    prompt: '标题: 请选择博客分类'
+                    prompt: '请选择博客分类'
                 }]
             },
             firstPicture : {
                 identifier: 'firstPicture',
                 rules: [{
                     type : 'empty',
-                    prompt: '标题: 请输入首图地址'
+                    prompt: '请输入首图地址'
                 }]
             },
             description : {
                 identifier: 'description',
                 rules: [{
                     type : 'empty',
-                    prompt: '标题: 请输入博客的描述信息'
+                    prompt: '请输入博客的描述信息'
                 }]
             }
         }

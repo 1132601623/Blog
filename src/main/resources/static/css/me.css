@@ -1,5 +1,5 @@
 body {
-    background: url("../images/bg.png");
+    background-color: gainsboro;
 }
 
 
@@ -74,6 +74,9 @@ body {
     font-weight: 300!important;
 }
 
+.m-text-color {
+    color: #0a001f;
+}
 .m-text-spaced {
     letter-spacing: 1px !important;
 }

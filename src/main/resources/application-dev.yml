@@ -1,13 +1,19 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://106.14.149.212:3306/blog?useUnicode=true&characterEncoding=utf-8&autoReconnect=true
-    username: root
-    password: 123456
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://106.14.149.212:3306/blog?useUnicode=true&characterEncoding=utf-8&autoReconnect=true
+      username: root
+      password: 123456
+      type: com.alibaba.druid.pool.DruidDataSource
+      min-idle: 5
+      initial-size: 5
+
   jpa:
     show-sql: true
     hibernate:
       ddl-auto: update
+
 logging:
   level:
     root: info
@@ -15,5 +21,3 @@ logging:
   file: log/blog-dev.log
 server:
   port: 80
-
-
